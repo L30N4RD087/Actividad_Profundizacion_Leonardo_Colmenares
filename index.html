@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Review | Últimas Reseñas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Movie Review</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mis Favoritas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="mb-4">Últimas Películas y Reseñas</h1>
+
+        <div class="row mb-4 align-items-center">
+            
+            <div class="col-12 col-sm-6 col-md-5 mb-3">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar película..." aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Buscar</button>
+                </form>
+            </div>
+
+            <div class="col-6 col-sm-3 col-md-4 mb-3">
+                <select class="form-select" aria-label="Filtro de Género">
+                    <option selected>Género (Todos)</option>
+                    <option value="1">Acción</option>
+                    <option value="2">Drama</option>
+                    <option value="3">Ciencia Ficción</option>
+                </select>
+            </div>
+
+            <div class="col-6 col-sm-3 col-md-3 mb-3">
+                <select class="form-select" aria-label="Filtro de Orden">
+                    <option selected>Ordenar por Fecha</option>
+                    <option value="1">Más Recientes</option>
+                    <option value="2">Mejor Puntuadas</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="imagenes/k_pop_demon_hunters.jpeg" class="card-img-top" alt="Poster Película 1">
+                    <div class="card-body">
+                        <h5 class="card-title">K-Pop Demon Hunters</h5>
+                        <p class="card-text"><small class="text-muted">Estreno: 20/06/2025</small></p>
+                        <p class="card-text">Cuando no están llenando estadios, las superestrellas del k‑pop Rumi, Mira y Zoey usan sus superpoderes secretos para proteger a sus fans de amenazas sobrenaturales.</p>
+                        <a href="detalle_pelicula_1.html" class="btn btn-sm btn-outline-dark">Ver Reseña Completa</a>
+                        <button class="btn btn-sm btn-warning float-end">Favorita</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="imagenes/otro_viernes_de_locos.jpg" class="card-img-top" alt="Poster Película 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Otro Viernes De Locos</h5>
+                        <p class="card-text"><small class="text-muted">Estreno: 22/07/2025</small></p>
+                        <p class="card-text">Años después de que Tess y Anna atravesaran una crisis de identidad, Anna ahora tiene una hija y una futura hijastra. Mientras lidian con los innumerables desafíos que surgen cuando dos familias se fusionan, Tess y Anna descubren que la realidad puede ser un rayo.</p>
+                        <a href="detalle_pelicula_2.html" class="btn btn-sm btn-outline-dark">Ver Reseña Completa</a>
+                        <button class="btn btn-sm btn-warning float-end">Favorita</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="imagenes/el_conjuro_4.jpg" class="card-img-top" alt="Poster Película 3">
+                    <div class="card-body">
+                        <h5 class="card-title">El Conjuro 4</h5>
+                        <p class="card-text"><small class="text-muted">Estreno: 05/09/2025</small></p>
+                        <p class="card-text">En 1986, los investigadores paranormales, Ed y Lorraine Warren, salen de su retiro para investigar, junto con su hija adulta Judy y su compañero Tony, el caso Smurl, una entidad demoníaca más oscura.</p>
+                        <a href="detalle_pelicula_3.html" class="btn btn-sm btn-outline-dark">Ver Reseña Completa</a>
+                        <button class="btn btn-sm btn-warning float-end">Favorita</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="imagenes/los_4_fantasticos.jpg" class="card-img-top" alt="Poster Película 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Los 4 Fantasticos: Primeros Pasos</h5>
+                        <p class="card-text"><small class="text-muted">Estreno: 21/07/2025</small></p>
+                        <p class="card-text">Con un estruendoso trasfondo en un mundo retrofuturista inspirado en los años 60, la Primera Familia de Marvel enfrenta su desafío más intimidante hasta ahora. Obligados a equilibrar sus roles como héroes con la fuerza de su vínculo familiar, deben defender la Tierra de un voraz dios espacial llamado Galactus y su enigmático heraldo, Silver Surfer.</p>
+                        <a href="detalle_pelicula_4.html" class="btn btn-sm btn-outline-dark">Ver Reseña Completa</a>
+                        <button class="btn btn-sm btn-warning float-end">Favorita</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="imagenes/y_donde_esta_el_policia.jpg" class="card-img-top" alt="Poster Película 5">
+                    <div class="card-body">
+                        <h5 class="card-title">¿Y Donde Esta El Policia? 2025</h5>
+                        <p class="card-text"><small class="text-muted">Estreno: 31/07/2025</small></p>
+                        <p class="card-text">Solo un hombre tiene las habilidades necesarias… ¡para liderar el Escuadrón de Policía y salvar el mundo!</p>
+                        <a href="detalle_pelicula_5.html" class="btn btn-sm btn-outline-dark">Ver Reseña Completa</a>
+                        <button class="btn btn-sm btn-warning float-end">Favorita</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="imagenes/nadie_2.jpg" class="card-img-top" alt="Poster Película 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Nadie 2</h5>
+                        <p class="card-text"><small class="text-muted">Estreno: 15/08/2025</small></p>
+                        <p class="card-text">Pese a disfrutar como siempre de la faceta más trepidante y física de su «trabajo», Hutch y su esposa Becca se sienten agotados y distanciados. Para intentar remediarlo, deciden llevarse a sus hijos de escapada al mismo lugar al que Hutch iba de vacaciones con su hermano Harry cuando eran pequeños.</p>
+                        <a href="detalle_pelicula_6.html" class="btn btn-sm btn-outline-dark">Ver Reseña Completa</a>
+                        <button class="btn btn-sm btn-warning float-end">Favorita</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="imagenes/superman.jpg" class="card-img-top" alt="Poster Película 7">
+                    <div class="card-body">
+                        <h5 class="card-title">Superman 2025</h5>
+                        <p class="card-text"><small class="text-muted">Estreno: 11/07/2025</small></p>
+                        <p class="card-text">En sus primeros años, el joven reportero de Metrópolis y superhéroe se embarca en un viaje para reconciliar su herencia kryptoniana con su educación humana como Clark Kent.</p>
+                        <a href="detalle_pelicula_7.html" class="btn btn-sm btn-outline-dark">Ver Reseña Completa</a>
+                        <button class="btn btn-sm btn-warning float-end">Favorita</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="imagenes/f1_la_pelicula.jpg" class="card-img-top" alt="Poster Película 8">
+                    <div class="card-body">
+                        <h5 class="card-title">F1 La Pelicula</h5>
+                        <p class="card-text"><small class="text-muted">Estreno: 25/06/2025</small></p>
+                        <p class="card-text">El piloto legendario Sonny Hayes es convencido de salir de su retiro para liderar a un equipo de la Fórmula 1 en dificultades y ser mentor de un joven piloto talentoso, mientras se busca una última oportunidad de gloria.</p>
+                        <a href="detalle_pelicula_8.html" class="btn btn-sm btn-outline-dark">Ver Reseña Completa</a>
+                        <button class="btn btn-sm btn-warning float-end">Favorita</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="imagenes/mision_imposible.jpg" class="card-img-top" alt="Poster Película 9">
+                    <div class="card-body">
+                        <h5 class="card-title">Mision: Imposible - Sentencia Final</h5>
+                        <p class="card-text"><small class="text-muted">Estreno: 05/05/2025</small></p>
+                        <p class="card-text">La Entidad, la IA experimental que se ha convertido en el villano de la historia, sigue activa y cuenta con el apoyo del malvado Gabriel en el mundo de los cárnicos. Por suerte, Ethan y su equipo tienen la llave que les podría dar el control de la Entidad, algo que les obligará a arriesgarse para eliminar a esa IA que descansa en el fondo del mar.</p>
+                        <a href="detalle_pelicula_9.html" class="btn btn-sm btn-outline-dark">Ver Reseña Completa</a>
+                        <button class="btn btn-sm btn-warning float-end">Favorita</button>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+        </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2025 Movie Review. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+
+$color-principal: #007bff;          
+$color-secundario: #343a40;         
+$color-fondo-claro: #f8f9fa;        
+$font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$card-transition-duration: 0.2s;    
+
+
+body {
+    background-image: url('imagenes/fondo_pagina.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    background-color: $color-fondo-claro;
+    font-family: $font-stack;
+}
+
+h1, h2, h5 {
+    color: $color-secundario;
+    
+    &.text-primary {
+        color: $color-principal !important;
+    }
+}
+
+
+.card {
+    border: none;
+    transition: transform $card-transition-duration ease-in-out;
+    
+    
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    }
+
+    .card-img-top {
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+
+@media (max-width: 575.98px) {
+    .card-img-top {
+        
+        $mobile-height: 400px; 
+        height: #{$mobile-height}; 
+    }
+}
+
+
+
+$section-border-color: $color-principal;
+
+#comentarios {
+    h2 {
+        
+        border-bottom: 2px solid #{$section-border-color}; 
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+    }
+    .card {
+        border-left: 5px solid $color-principal; 
+    }
+}
+
+
+footer {
+    background-color: $color-secundario !important; 
+    
+    p {
+        margin-bottom: 0;
+        
+        a {
+            color: white;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
